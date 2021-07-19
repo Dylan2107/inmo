@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./js/script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <title>Alameda</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="css/estilo.css" type="text/css" rel="Stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+
+<body>
+    <div id="header-hero-container">
+        <header>
+            <div class="flex container">
+                <a id="logo" href="#">alameda costablanca, s.l.</a>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+
+                    <ul id="nav-menu">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#propiedades">Propiedades</a></li>
+                        <li><a href="#plano">Planos</a></li>
+                        <!-- <li><a href="#segunda">Segunda Mano</a></li> -->
+                        <li><a href="#memorias">Memoria</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li id="close-flyout"><span class="fas fa-times"></span></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="hero">
+            <div class="fade"></div>
+            <div class="hero-text">
+                <h1>Encuentre la casa que siempre deseó</h1>
+                <p>Vea sus sueños convertidos en realidad.</p>
+            </div>
+        </section>
+    </div>
+
+    <section id="how-it-works">
+        <div class="container">
+            <h2>Cómo funciona</h2>
+            <div class="flex">
+                <div>
+                    <span class="fas fa-home"></span>
+                    <h4>Encuentre una propiedad</h4>
+                    <p>Busque en nuestra web y elija su casa.</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-dollar-sign"></span>
+                    <h4>Compre una propiedad</h4>
+                    <p>Sea dueño de una gran vivienda.</p>
+                </div>
+
+                <div>
+                    <span class="fas fa-chart-line"></span>
+                    <h4>Investigue</h4>
+                    <p>Rastree por nuestra web y le convencerá.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="properties">
+        <div class="container">
+            <h2 id="propiedades">Propiedades</h2>
+            <div id="properties-slider" class="slick">
+                <div>
+                    <a href="./images/SALON_1_1_PP.jpg" target="_blank"><img src="./images/SALON_1_1_PP.jpg"
+                            alt="Property 1" /></a>
+                    <div class="property-details">
+                        <!-- <p class="price"></p> 
+                        <span class="beds">3 dormitorios</span>
+                        <span class="baths">2 baños</span>
+                        <span class="sqft">75.90 m<sup>2</sup></span>-->
+                        <address>
+                            Pavimento de vivienda de tarima flotante acabado roble y gres cerámico
+                            antideslizante en cuartos de baño y terrazas exteriores.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/SALON_2.jpg" target="_blank"><img src="./images/SALON_2.jpg"
+                            alt="Property 1" /></a>
+                    <div class="property-details">
+                        <!-- <p class="price"></p> 
+                        <span class="beds">2 dormitorios</span>
+                        <span class="baths">2 baños</span>
+                        <span class="sqft">56.80 m<sup>2</sup></span>-->
+                        <address>
+                            Pintura plástica lisa lavable sobre paredes y techos en colores blancos o suaves.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/BA+æO_1_PP.jpg" target="_blank"><img src="./images/BA+æO_1_PP.jpg"
+                            alt="Property 1" /></a>
+                    <div class="property-details">
+                        <!-- <p class="price"></p>
+                        <span class="beds"></span>
+                        <span class="baths"></span>
+                        <span class="sqft"> m<sup>2</sup></span> -->
+                        <address>
+                            Sanitarios modelo Jacob Delafon, modelo Huno o similar, lavabo semipedestal y
+                            plato de ducha de porcelana.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/BA+æO_2_PP.jpg" target="_blank"><img src="./images/BA+æO_2_PP.jpg"
+                            alt="Property 1" /></a>
+                    <div class="property-details">
+                        <!-- <p class="price"></p> 
+                        <span class="beds"></span>
+                        <span class="baths"></span>
+                        <span class="sqft"> m<sup>2</sup></span>-->
+                        <address>
+                            Revestimientos de paredes en baños con azulejo cerámico.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/TERRAZA_1_PP.jpg" target="_blank"><img src="./images/TERRAZA_1_PP.jpg"
+                            alt="Property 1" /></a>
+                    <div class="property-details">
+                        <!-- <p class="price"></p>
+                        <span class="beds">3 dormitorios</span>
+                        <span class="baths">2 baños</span>
+                        <span class="sqft">74.95 m<sup>2</sup></span> -->
+                        <address>
+                            Aislamiento de alta eficacia en medianeras, realizado con lana de roca, cámara de
+                            aire, lámina interior a base de paneles prefabricados (tipo Pladur) sobre perfilería
+                            metálica, rellenando el intradós con lana de roca de gran rendimiento
+                            termoacústico.
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <h2>Procesos para encontrar la casa de tus sueños</h2>
+            <br />
+            <br />
+            <br />
+            <!-- partial:index.partial.html -->
+            <ul class="timeline">
+                <li data-year="ENERO" data-text="Busco por todas partes y ninguna casa me convence."></li>
+                <li data-year="MARZO" data-text="Veo la vivienda y siento que voy por buen camino."></li>
+                <li data-year="MAYO" data-text="Me muestran los planos y las memorias de calidades y me gusta."></li>
+                <li data-year="JUNIO" data-text="Me doy un paseo por la zona y me encanta por su tranquilidad."></li>
+                <li data-year="2021" data-text="Compro la vivienda."></li>
+            </ul>
+            <!-- partial -->
+
+        </div>
+
+
+    </section>
+    <br />
+    <br />
+    <br />
+    <section id="planos">
+        <div class="container">
+            <h2 id="plano">Planos</h2>
+            <div id="planos-slider" class="slick">
+                <div>
+                    <a href="./pdfs/Plano1.pdf">Descargar</a>
+                    <img src="./images/Plano_1.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Puerta de entrada a vivienda blindada de alta seguridad con sistema múltiple de
+                            cierre y anclaje.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano2-4.pdf">Descargar</a>
+                    <img src="./images/Plano 2-4.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Ventanales y ventanas exteriores de carpintería de aluminio anodizado plata con
+                            perfilería especial y rotura de puente térmico (RPT).
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano5-Solarium.pdf">Descargar</a>
+                    <img src="./images/Plano_5-Solarium.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Balcones dotados de vidrio de seguridad montado sobre perfilería metálica y
+                            anclajes homologados.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano5.pdf">Descargar</a>
+                    <img src="./images/Plano_5.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Cada una de las viviendas, se entregan con una pequeña porción de césped artificial y
+                            bancada de barbacoa.
+                            Opcional instalación de jacuzzi y pérgola.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_Parking.pdf">Descargar</a>
+                    <img src="./images/Plano_Parking.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Preinstalación de servicio de carga de coche eléctrico en todos las plazas de garaje.
+                            Se marcará de otro color en la zona de la urbanización la calzada romana.
+                            Se colocará en un receptáculo elevado la calzada íbera localizada en el interior de la
+                            urbanización.
+
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_Planta_Baja.pdf">Descargar</a>
+                    <img src="./images/Plano_Planta_Baja.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Local comercial, el cual dispone de sótano, disponible como almacén del local comercial,
+                            además de posibilidad de montaje de hasta 16 trasteros.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_Trasteros.pdf">Descargar</a>
+                    <img src="./images/Plano_Trasteros.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Puertas de acceso a núcleos comunes a base de hojas cortafuegos según
+                            normativa vigente.
+                        </address>
+                    </div>
+                </div>
+
+
+                <!-- <div> 
+                    <a href="./pdfs/TERRAZA5-1.pdf">Descargar</a>
+                    <img src="./images/t" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Armarios empotrados con puertas correderas lisas en color blanco con forrado
+                            interior, altillo y barra de colgar.
+                        </address>
+                    </div>
+                </div>-->
+
+
+
+                <!-- <div> 
+                    <a href="./pdfs/TERRAZA5.2.pdf">Descargar</a>
+                    <img src="./images/TERRAZA5.2_page-0001.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Acristalamiento con vidrio doble con cámara de aire para mayor estanqueidad y
+                            aislamiento.
+                        </address>
+                    </div>
+                </div>-->
+
+                <!-- <div> 
+                    <a href="./pdfs/TERRAZA5-3.pdf">Descargar</a>
+                    <img src="./images/TERRAZA5-3_page-0001.jpg" alt="Property 1" />
+                    <div class="property-details">
+                        <address>
+                            Balcones dotados de vidrio de seguridad montado sobre perfilería metálica y
+                            anclajes homologados.
+                        </address>
+                    </div>
+                </div>-->
+                <div>
+                    <a href="./pdfs/Planta_Solarium_de_Aticos.pdf">Descargar</a>
+                    <img src="./images/Planta_Solarium_de_Aticos.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Disponibles las 3 viviendas situadas en la ultima planta, con sus respectivos Solarium.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_Vivienda_y_Solarium_Ático_5.1.pdf">Descargar</a>
+                    <img src="./images/Plano_de_Vivienda_y_Solarium_Ático_5.1.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            De forma opcional se ofrece instalacion de pérgola y/o jacuzzi.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_Vivienda_y_Solarium_Ático_5.3.pdf">Descargar</a>
+                    <img src="./images/Plano_de_Vivienda_y_Solarium_Ático_5.3.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Acabados de calidad, además de vistas espectaculares de la zona.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Vivienda_Ático_5.2.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Vivienda_Ático_5.2.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Climatización mediante preinstalación para aire acondicionado a base de
+                            conductos de reparto y tuberías de conexión. La maquinaria interior y exterior
+                            quedará prevista e interconectada para su colocación por el cliente en cubierta.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Vivienda_Ático_5.3.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Vivienda_Ático_5.3.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Urbanización dotada de zona recreativa con materiales y creaciones sintéticas de mínimo
+                            mantenimiento
+                            para larga duración.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Solarium_Ático_5.1.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Solarium_Ático_5.1.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Iluminación exterior a base de báculos con luminarias led de bajo consumo en toda la
+                            urbanización.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Vivienda_Ático_5.1.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Vivienda_Ático_5.1.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            El edificio cuenta con cerramiento la zona de esparcimiento de la parcela separativa del
+                            exterior con
+                            elementos de ocultación mezcla de fábrica y cerrajería metálica.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Solarium_Átco_5.3.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Solarium_Átco_5.3.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            En todo el edificio se dispone de climatización mediante preinstalación para aire
+                            acondicionado a base de
+                            conductos de reparto y tuberías de conexión. La maquinaria interior y exterior
+                            quedará prevista e interconectada para su colocación por el cliente en cubierta.
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./pdfs/Plano_de_planta_Solarium_Átco_5.2.pdf">Descargar</a>
+                    <img src="./images/Plano_de_planta_Solarium_Átco_5.2.jpg" alt="Property 1" class="zoom" />
+                    <div class="property-details">
+                        <address>
+                            Balcones dotados de vidrio de seguridad montado sobre perfilería metálica y
+                            anclajes homologados.
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--
+    <section id="segunda">
+        <div class="container">
+            <h2 id="segundamano">Segunda Mano</h2>
+            <div id="segunda-slider" class="slick">
+                <div>
+                    <a href="./images/SALON_1_1_PP.jpg" target="_blank"><img src="./images/SALON_1_1_PP.jpg" alt="Property 1" /></a>
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 dormitorios</span>
+                        <span class="baths">4 baños</span>
+                        <span class="sqft">4,250 m<sup>2</sup></span>
+                        <address>
+                            Calle Guadalest, Villajoyosa
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/SALON_2.jpg" target="_blank" ><img src="./images/SALON_2.jpg" alt="Property 1" /></a>
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 dormitorios</span>
+                        <span class="baths">4 baños</span>
+                        <span class="sqft">4,250 m<sup>2</sup></span>
+                        <address>
+                            Calle Guadalest, Villajoyosa
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/BA+æO_1_PP.jpg" target="_blank"><img src="./images/BA+æO_1_PP.jpg" alt="Property 1" /></a>
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 dormitorios</span>
+                        <span class="baths">4 baños</span>
+                        <span class="sqft">4,250 m<sup>2</sup></span>
+                        <address>
+                            Calle Guadalest, Villajoyosa
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/BA+æO_2_PP.jpg" target="_blank"><img src="./images/BA+æO_2_PP.jpg" alt="Property 1" /></a>
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 dormitorios</span>
+                        <span class="baths">4 baños</span>
+                        <span class="sqft">4,250 m<sup>2</sup></span>
+                        <address>
+                            Calle Guadalest, Villajoyosa
+                        </address>
+                    </div>
+                </div>
+
+                <div>
+                    <a href="./images/TERRAZA_1_PP.jpg" target="_blank"><img src="./images/TERRAZA_1_PP.jpg" alt="Property 1" /></a>
+                    <div class="property-details">
+                        <p class="price">$3,400,000</p>
+                        <span class="beds">6 dormitorios</span>
+                        <span class="baths">4 baños</span>
+                        <span class="sqft">4,250 m<sup>2</sup></span>
+                        <address>
+                        Calle Guadalest, Villajoyosa                      
+                      </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <section id="memoria">
+        <div class="container">
+            <h2 id="memorias">Memoria de calidades</h2>
+            <h3>El edificio</h3>
+            <a href="./pdfs/Anexo 1 Memoria Edificio GENÉRICO.pdf">Descargar</a>
+            <h4>Cimentación y estructura</h4>
+            <ul>
+                <li>Cimentación mediante losa de hormigón armado con acabado de fratasado
+                    mecánico superficial de alta resistencia.</li>
+                <li>Estructura de hormigón armado con cálculo anti sísmico de grado 7 según
+                    normativa vigente.</li>
+            </ul>
+            <h4>Fachadas y medianeras</h4>
+            <ul>
+                <li>Fachada realizada a base de ladrillo cerámico revestido con tratamiento monocapa
+                    raspado en dos colores, armonizada con las edificaciones del entorno.</li>
+                <li>Antepechos de balcones a base de vidrio de seguridad con fijaciones por
+                    montantes anclados a estructura permitiendo gran visibilidad de urbanización y
+                    paisaje.</li>
+                <li>Aislamiento de alta eficacia en medianeras, realizado con lana de roca, cámara de
+                    aire, lámina interior a base de paneles prefabricados (tipo Pladur) sobre perfilería
+                    metálica, rellenando el intradós con lana de roca de gran rendimiento
+                    termoacústico.</li>
+            </ul>
+            <h3>La habitabilidad</h3>
+            <a href="./pdfs/Anexo 2 Memoria Habitabilidad GENÉRICO.pdf">Descargar</a>
+            <h4>Paramentos interiores</h4>
+            <ul>
+                <li>Paramentos verticales interiores a base de tabiquería tipo Pladur sobre perfilería
+                    metálica con aislamiento.</li>
+                <li>Medianeras entre viviendas a base de panel prefabricado y relleno interior de
+                    material aislante homologado, garantizando la correspondiente independencia.</li>
+                <li>Techos de zonas húmedas registrable o continuo, fijado al forjado mediante
+                    tornillería y perfiles metálicos, para mantenimiento de las instalaciones, que será
+                    desmontable donde lo requiera, mediante el sistema de placas prefabricadas sobre
+                    perfilería vista de aluminio lacado.</li>
+            </ul>
+            <h4>Revestimientos</h4>
+            <ul>
+                <li>Pavimento de vivienda de tarima flotante acabado roble y gres cerámico
+                    antideslizante en cuartos de baño y terrazas exteriores.</li>
+                <li>Zonas comunes, zaguanes y escaleras a base de material cerámico.</li>
+                <li>Revestimientos de paredes en baños con azulejo cerámico. Entre los muebles de
+                    cocina altos y bajos, frente de silestone o similar, a juego con las encimeras.</li>
+                <li>Pintura plástica lisa lavable sobre paredes y techos en colores blancos o suaves.</li>
+            </ul>
+            <h3>La vivienda y su entorno</h3>
+            <a href="./pdfs/Anexo 3 Memoria Vivienda y Urbanización GENÉRICO.pdf">Descargar</a>
+            <h4>Carpintería interior</h4>
+            <ul>
+                <li>Puerta de entrada a vivienda blindada de alta seguridad con sistema múltiple de
+                    cierre y anclaje.</li>
+                <li>Puertas de paso interiores lisas prelacadas en color blanco con herrajes de diseño.</li>
+                <li>Armarios empotrados con puertas correderas lisas en color blanco con forrado
+                    interior, altillo y barra de colgar.</li>
+            </ul>
+            <h4>Carpintería exterior</h4>
+            <ul>
+                <li>Ventanales y ventanas exteriores de carpintería de aluminio anodizado plata con
+                    perfilería especial y rotura de puente térmico (RPT).</li>
+                <li>Acristalamiento con vidrio doble con cámara de aire para mayor estanqueidad y
+                    aislamiento.</li>
+                <li>Balcones dotados de vidrio de seguridad montado sobre perfilería metálica y
+                    anclajes homologados.</li>
+                <li>Persianas con lamas de aluminio y sistema manual de accionamiento en los
+                    dormitorios.</li>
+                <li>Puerta de acceso a zona de aparcamientos automatizada con accionamiento a
+                    distancia selectivo.</li>
+                <li>Puertas de acceso a núcleos comunes a base de hojas cortafuegos según
+                    normativa vigente.</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+    <script>
+        function onSubmit(token) {
+            //alert(token);
+            if (validarFormulario() == true) {
+                document.getElementById("miForm").submit();
+            }
+            else {
+                alert("El formulario es incorrecto");
+            }
+        }
+    </script>
+
+    <section id="contact">
+        <div class="container">
+            <h2 id="contacto">Contacto</h2>
+
+            <div class="flex">
+                <div>
+                    Para concertar una cita llamanos por teléfono al <a href="tel:666 055 913">666 055 913</a> o
+                    envía un correo electronico a <a
+                        href="mailto:alamedacostablanca@hotmail.com">alamedacostablanca@hotmail.com</a>
+                </div>
+                <div id="form-container">
+                    <h3>Formulario de contacto</h3>
+                    <div>
+                        Para concertar una cita llamanos por teléfono al <a href="tel:666 055 913">666 055 913</a> o
+                        envía un correo electronico a <a
+                            href="mailto:alamedacostablanca@hotmail.com">alamedacostablanca@hotmail.com</a>
+                    </div>
+                    <!--  <form action="mailto:alamedacostablanca@hotmail.com" method="POST" autocomplete="off"
+                        onsubmit="return validarFormulario();">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="IdNombre" name="nombre" onblur="muestraValidacionNombre();" />
+                        <div style="color: red" id="mensaje_nombre"></div>
+
+                        <label for="email">Email</label>
+                        <input type="text" id="IdEmail" name="email" onblur="muestraValidacionEmail();" />
+                        <div style="color: red" id="mensaje_email"></div>
+
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="IdAsunto" name="asunto" onblur="muestraValidacionAsunto();" />
+                        <div style="color: red" id="mensaje_asunto"></div>
+
+                        <label for="message">Mensaje</label>
+                        <textarea id="IdTextArea" placeholder="Escriba aquí su mensaje..." name="textArea"
+                            onblur="muestraValidacionTextArea();"></textarea>
+                        <div style="color: red" id="mensaje_textarea"></div>
+                        <button class="rounded">Enviar</button>
+
+                        <button class="g-recaptcha" data-sitekey="6LfZ8ZkbAAAAAMx83F_ejIjxMbLg2WXuxWRRo8tc"
+                            data-callback="onSubmit" data-action="submit">Enviar</button>
+                    </form>-->
+                </div>
+            </div>
+            <div id="address-container">
+                <label>Dirección</label>
+                <address>
+                    Calle Gabriel Miró, 1 (Entrada Calle Cervantes) 03570 Villajoyosa - Alicante
+                </address>
+
+                <label>Teléfonos</label>
+                <p>96 589 04 59</p>
+                <p>666 055 913</p>
+                <label>Email</label>
+                <a href="mailto:alamedacostablanca@hotmail.com">alamedacostablanca@hotmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12488.951988994539!2d-0.2354955!3d38.5052216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x266d6bb9aad79a0e!2sAlameda%20Costablanca%20S.l.!5e0!3m2!1ses!2ses!4v1626183411441!5m2!1ses!2ses"
+            width="1100" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+    <footer>
+        <div class="flex container">
+            <div class="footer-about">
+                <h5>Acerca de Alameda Costablanca S.L.</h5>
+                <p>Somos una inmobiliaria con vasta experiencia en el sector de venta de viviendas.</p>
+            </div>
+        </div>
+
+        <small>
+            Copyright &copy; 2021
+        </small>
+    </footer>
+
+    <script>
+        $(function () {
+            let headerElem = $('header');
+            let logo = $('#logo');
+            let navMenu = $('#nav-menu');
+            let navToggle = $('#nav-toggle');
+
+            $('#properties-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+            });
+
+            $('#planos-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 530,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    }
+                ]
+            });
+            /*
+                       $('#segunda-slider').slick({
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                            prevArrow: '<a href="#" class="slick-arrow slick-prev">previous</a>',
+                            nextArrow: '<a href="#" class="slick-arrow slick-next">next</a>',
+                            responsive: [
+                                {
+                                    breakpoint: 1100,
+                                    settings: {
+                                        slidesToShow: 3,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                },
+                                {
+                                    breakpoint: 767,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                },
+                                {
+                                    breakpoint: 530,
+                                    settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                    }
+                                }
+                            ]
+                       });
+            
+                       $('#testimonials-slider').slick({
+                            infinite: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            prevArrow: '<a href="#" class="slick-arrow slick-prev"><</a>',
+                            nextArrow: '<a href="#" class="slick-arrow slick-next">></a>'
+                       });
+            
+                       navToggle.on('click', () => {
+                           navMenu.css('right', '0');
+                       });
+            
+                       $('#close-flyout').on('click', () => {
+                            navMenu.css('right', '-100%');
+                       });
+            
+                       $(document).on('click', (e) => {
+                           let target = $(e.target);
+                           if (!(target.closest('#nav-toggle').length > 0 || target.closest('#nav-menu').length > 0)) {
+                               navMenu.css('right', '-100%');
+                           }
+                       });
+            */
+            $(document).scroll(() => {
+                let scrollTop = $(document).scrollTop();
+
+                if (scrollTop > 0) {
+                    navMenu.addClass('is-sticky');
+                    logo.css('color', '#003d99');
+                    headerElem.css('background', '#fff');
+                    navToggle.css('border-color', '#000');
+                    navToggle.find('.strip').css('background-color', '#000');
+                } else {
+                    navMenu.removeClass('is-sticky');
+                    logo.css('color', '#fff');
+                    headerElem.css('background', 'transparent');
+                    navToggle.css('bordre-color', '#fff');
+                    navToggle.find('.strip').css('background-color', '#fff');
+                }
+
+                headerElem.css(scrollTop >= 200 ? { 'padding': '0.5rem', 'box-shadow': '0 -4px 10px 1px #999' } : { 'padding': '1rem 0', 'box-shadow': 'none' });
+            });
+
+            $(document).trigger('scroll');
+        });
+
+        $(document).ready(function () {
+            $('.zoom').hover(function () {
+                $(this).addClass('transition');
+            }, function () {
+                $(this).removeClass('transition');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
